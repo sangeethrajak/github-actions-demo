@@ -24,4 +24,5 @@ jobs:
           docker run -d -p 8080:80 --name testcontainer myapp:latest
           sleep 5
           curl http://localhost:8080
-
+     - name: List Docker Images
+       run: docker images
